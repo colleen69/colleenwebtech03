@@ -87,7 +87,7 @@ li:hover{
 }
 
 .wrapper {
-      overflow-x: hidden;
+  overflow: hidden;
 }
 .homepagetitle {
     z-index: 1;
