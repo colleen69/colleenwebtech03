@@ -6,11 +6,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Exo|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--silck links-->    
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
-    <link rel="stylesheet" href="css/media-query.css"> <!-- CSS Media-q -->
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css'>
+	
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/media-query.css"> <!-- CSS Media-q -->
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -25,14 +24,21 @@
     <!--https://codepen.io/tag/equalizer/-->
     
 <audio>
-    <source src="m4.wav" type="audio/wav">
+    <source src="m1.wav" type="audio/wav">
     <source src="img/m4.wav" type="audio/mpeg">
     Your browser does not support the audio element. 
 </audio> 
 
+
+    
   <div class="wrapper">
+
+    <label id="drop" class="toggle hidden-dk"><i class="fa fa-bars"></i></label>
+    <input type="checkbox" id="drop">
+
+      
     <nav class="nav-container">
-		<ul class="display-dk hidden-md hidden-sm">
+		<ul class="menu1 disply-dk hidden-md hidden-sm">
             
             <li><a href="index.html#getstory" class="menu-item-1st">GET THE<br>STORY</a></li>
             <li><a href="index.html#getstory" class="menu-item-2nd">20.540</a></li>
@@ -57,7 +63,7 @@
         
         <!--On homepage load play first video-->
     
-        <video class="video1">
+        <video autoplay class="video1">
             <source src="img/clip1.mp4" type="video/mp4">   
             <source src="media/demo.ogv" type="video/ogg" />
             <source src="media/demo.webm" type="video/webm"/>
@@ -70,38 +76,62 @@
 <section class="cd-section crew-section">
     <a href="#"><div id="cast"></div></a>
     <div>
-        <article class="crew-article">   
-            <!--carousel-->
-            <div class="crew"> 
-                <div class="gal">
-                    <img src="img/simon4.png" class="display-dk display-md hidden-sm">
-                    <img src="img/simon-ph2.png" class="hidden-dk hidden-md display-sm">
-                    <h3 class="name">Simon Yates</h3>
-                </div>
-                <div class="gal">
-                    <img src="img/joe4.png" class="display-dk display-md hidden-sm">
-                    <img src="img/joe-ph2.png" class="hidden-dk hidden-md display-sm">
-                    <h3 class="name">Joe Simpson</h3>
-                </div>
-                <div class="gal">
-                    <img src="img/fred4.png" class="display-dk display-md hidden-sm">
-                    <img src="img/fred-ph2.png" class="hidden-dk hidden-md display-sm">
-                    <h3 class="name">Fred Jacobs</h3>
-                </div>
-                <div class="gal">
-                    <img src="img/jack4.png" class="display-dk display-md hidden-sm">
-                    <img src="img/jack-ph2.png" class="hidden-dk hidden-md display-sm">
-                    <h3 class="name">Richard Hawking</h3>
-                </div>
-            </div>
-        </article> 
-            <video class="video2">
-                <source src="img/clip7-3.mp4" type="video/mp4">   
-                <source src="media/demo.ogv" type="video/ogg" />
-                <source src="media/demo.webm" type="video/webm"/>
-                Your browser doesn't support HTML5 video. Here's a <a target="_blank" href="#"></a> to download the video.
-            </video>  
+  
+			
+			
+			
+			
+			
+			
+			
+			
+<!--carousel https://codepen.io/colleen69/pen/dqPXxN-->
+<div class="main-gallery carousel" data-flickity>
+  <div class="gallery-cell">
+    <div class="testimonial">
+        <img class="testimonial-avatar" src="img/siomon.png">
+     
+      <span class="testimonial-author">Simon Yates</span>
     </div>
+  </div>
+  <div class="gallery-cell">
+     <div class="testimonial">
+        <img class="testimonial-avatar" src="img/siomon.png">
+    
+      <span class="testimonial-author">Simon Yates</span>
+    </div>
+  </div>
+  <div class="gallery-cell">
+        <div class="testimonial">
+        <img class="testimonial-avatar" src="img/siomon.png">
+      
+      <span class="testimonial-author">Simon Yates</span>
+    </div>
+  </div>
+</div>
+			
+	
+
+
+				
+				
+				
+			
+			
+			
+			
+				
+				
+				
+   	<video class="video2">
+       <source src="img/clip7_3.mp4" type="video/mp4">   
+       <source src="media/demo.ogv" type="video/ogg" />
+       <source src="media/demo.webm" type="video/webm"/>
+       Your browser doesn't support HTML5 video. Here's a 
+				<a target="_blank" href="#"></a> to download the video.
+    </video>  
+
+	</div>
 </section>
 
 <!-- section3 -->  
@@ -188,6 +218,7 @@
                 </object>
        </article>
 
+
         <article class="buy-info hidden-dk display-md display-sm">  
             <div class="buy-dvd-button-div hidden-dk display-md display-sm">
                 <img src="img/dvd.jpg" alt="Touching the void dvd" class="dvd-pic disply-dk disply-md hidden-sm">
@@ -226,15 +257,15 @@
         <img src="img/downbutton.png" class="arrow">
         <h1 class="scroll-title">SCROLL FOR EXPERIENCE</h1>
     </div>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js'></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/velocity.min.js"></script>
 <script src="js/velocity.ui.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
- <script src="js/colleen.js"></script>
-<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/colleen.js"></script>
+<script src="js/Carousel.js"></script>
       
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
    
