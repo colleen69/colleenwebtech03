@@ -25,7 +25,7 @@ media.each(function(index, el) {
         var yBottomMedia = $(this).height() + yTopMedia;
 if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){
         $(this).get(0).play();
-        $('.gal,.slick-dots').hide().delay(0).fadeIn(1000);
+        $('.main-gallery').hide().delay(0).fadeIn(1000);
         $('svg').hide().delay(0).fadeIn(1000);
         $('.buy-info,buy-dvd-button-div,.container').hide().delay(0).fadeIn(1000);
         
@@ -39,7 +39,7 @@ $(document).on('scroll', checkMedia);
 });
 
 // autoplay video1 only
-$(".video1")[0].play();
+//$(".video1")[0].play();
 
 $(".homepagetitle").fadeOut(4500); 
 
@@ -57,6 +57,17 @@ var flkty = new Flickity( '.main-gallery', {
   prevNextButtons: false,
   autoPlay: 5000
 });
+
+
+
+//play audio sound on page load 
+//window.onload = function() {
+//    document.getElementById("my_audio").play();
+//}
+//
+//window.onload = function() {
+//    document.getElementByClass("video1").play();
+//}
 
 
 

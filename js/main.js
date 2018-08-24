@@ -567,15 +567,6 @@ $.Velocity
         ]
     });
 
-//$('.video1').height("100%") 
-//
-//$('.video2').height("100%") 
-//
-//$('.video3').height("100%") 
-//
-//$('.video4').height("100%") 
-
-
 
 
 
