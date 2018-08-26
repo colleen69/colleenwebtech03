@@ -177,6 +177,15 @@
     width: auto;
     transform: translate(-20%, -0%);
 }
+	
+.play{
+	z-index: 10;
+	position:absolute;
+	top: 50%;
+	left: 46%;
+	padding: 5px 15px;
+	font-size: 20px;
+}	
 
 .homepagetitle {
     bottom: 130px;
@@ -419,7 +428,7 @@ svg {
     margin-top: -50px;
 }
 
-.trailer-button{
+.trailer-button {
     width: 100px;
     margin-left: 0px;
     margin-bottom: 10px;

@@ -70,7 +70,7 @@ ul {
 li {
 	padding-bottom: 10px;
 	padding-top: 10px;
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 li a { 
@@ -92,8 +92,52 @@ li:hover{
 }
 
 .wrapper {
-      overflow-x: hidden;
+  overflow-x: hidden;
 	overflow-y: hidden;
+}
+
+
+/*play button*/
+
+.playbtn-wrapper{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.play{
+	z-index: 10;
+	position:absolute;
+	top:40%;
+	left: 47%;
+	border-radius: 1px;
+	border: 1px solid #A01305;
+	color: #A01305;
+	padding: 5px 15px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	letter-spacing: 2px;
+/*
+  width: 0; 
+  height: 0; 
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 60px solid #fff;
+	background-color: rgba(0, 0, 0, .0);
+*/
+
+}
+
+.play:hover{
+	background-color: #A01305;
+	transition: all 1s ease;
+	border: 1px solid #fff;
+	color: #fff;
+	font-weight: 700;
+}
+
+input{
+		text-decoration: none;
 }
 
 .homepagetitle {
@@ -178,7 +222,7 @@ font-size: 18px;
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #A01305;;
+  background: #A01305;
 }
 
 
@@ -489,6 +533,12 @@ margin: 0 auto;
 
 @media screen and (min-width: 0px) and (max-width: 639px) {
 
+.play{
+	top: 40%;
+	left: 40%;
+	font-size: 18px;
+}		
+	
 .testimonial-avatar {
     width: 280px;
 	}
@@ -503,7 +553,7 @@ margin: 0 auto;
 }
 	
 .testimonial-author	{
-		font-size: 31px;
+	font-size: 31px;
 	}
 	
 .main-gallery {
@@ -511,7 +561,13 @@ margin: 0 auto;
 }
 	
 @media screen and (min-width: 0px) and (max-width: 300px) {
-		
+
+.play{
+	top: 15px;
+	left: 40%;
+	font-size: 16px;
+}	
+	
 .shear{
 	display: none;
 }
@@ -520,14 +576,14 @@ margin: 0 auto;
   margin-top: 0px;
 }
 		
-.buy-info{
+.buy-info {
 	background-color: rgba(255, 255, 255, 0.2);
 	width: 80%;
 	height: 100%;
 }
 		
 .white-svg{
-display: none;
+	display: none;
 }
 	
 .main-gallery {
@@ -542,7 +598,6 @@ display: none;
 	width: 100%;
 	position: absolute;
 	bottom: 140px;
-
 } 
 	
 .buy-dvd-button-div{
@@ -560,8 +615,8 @@ display: none;
 	margin: 0px 0px!important;
 } 
 
-	.flickity-page-dots .dot {
-    width: 18px;
+.flickity-page-dots .dot {
+  width: 18px;
 }
 
 }

@@ -58,18 +58,11 @@ var flkty = new Flickity( '.main-gallery', {
   autoPlay: 5000
 });
 
-
-
-//play audio sound on page load 
-//window.onload = function() {
-//    document.getElementById("my_audio").play();
-//}
-//
-//window.onload = function() {
-//    document.getElementByClass("video1").play();
-//}
-
-
+//play audio sound on button click
+  function PlaySoundAndVideo(soundObj,videoObj) {
+    var soundAndVideo=document.getElementById(soundObj,videoObj);
+    soundAndVideo.play();
+  }
 
 
 

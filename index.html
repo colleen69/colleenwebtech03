@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+	<!--<meta http-equiv="refresh"/> -->
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Exo|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Exo|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css'>
 	
   <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -18,16 +20,10 @@
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
-<body data-hijacking="off" data-animation="opacity">
-    
-<!--
-<audio autoplay>
-    <source src="m1.wav" type="audio/wav">
-    <source src="img/m4.wav" type="audio/mpeg">
-    Your browser does not support the audio element. 
-</audio> 
--->
-    
+<body data-hijacking="off" data-animation="opacity"> 
+
+<!--<input type="button" class="play" value="PLAY"  onclick="play()">-->
+	
   <div class="wrapper">
 
     <label id="drop" class="toggle hidden-dk"><i class="fa fa-bars"></i></label>
@@ -57,11 +53,16 @@
             <h1 class="title1">TOUCHING THE VOID</h1> 
             <h3 class="title2">Based on a true story</h3> 
         </div>
-        
-        <!--On homepage load play first video-->
-    
-        <video autoplay class="video1">
-            <source src="img/clip1.mp4" type="video/mp4">   
+  
+    <!--audio sound-->
+	<audio id="audioInHTML" src="img/sound.mp3"></audio>
+		 <!--On homepage load play button click-->	
+			
+
+			<input type="button" class="play" value="PLAY" onClick="PlaySoundAndVideo('videoInHTML'),PlaySoundAndVideo('audioInHTML')">
+
+        <video id="videoInHTML" class="video1">
+            <source src="img/clip1.mp4" type="video/mp4"> 
             <source src="media/demo.ogv" type="video/ogg" />
             <source src="media/demo.webm" type="video/webm"/>
                 Your browser doesn't support HTML5 video. Here's a <a target="_blank" href="#">link</a> to download the video.
@@ -253,6 +254,8 @@
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="js/colleen.js"></script>
 <script src="js/Carousel.js"></script>
+<!-- For sound and video1 -->		
+<script type="text/javascript" src="http://code.jquery.com/jquery-git.js"></script><script type="text/javascript" src="https://static.bocoup.com/js/popcorn.min.js"></script>		
       
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>-->
    
